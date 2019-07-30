@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import OrdersIndex from './views/OrdersIndex.vue'
+import StatisticsPage from './views/StatisticsPage.vue'
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
       path: '/orders',
       name: 'orders',
       component: OrdersIndex
+    },
+    {
+      path: '/fruits',
+      name: 'fruits',
+      component: StatisticsPage
     }
   ]
 })
